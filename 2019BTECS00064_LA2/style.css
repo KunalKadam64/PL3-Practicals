@@ -1,0 +1,101 @@
+body{
+	margin: 0;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	background-color: #e3fdfd;
+}
+
+h1{
+	font-size: 70px;
+	margin: 50px auto 0 auto;
+	font-family: 'Sacramento', cursive;
+	color: #66BFBF;
+	line-height: 2;
+}
+
+.name{
+	font-size: 50px;
+	margin: 50px auto 0 auto;
+	font-family: 'Sacramento', cursive;
+	color: #66BFBF;
+	line-height: 2;
+}
+
+.batch{
+	font-weight: normal;
+	font-size: 40px;
+	color: #66BFBF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.intrest{
+	color: #11999E;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	color:#11999E;
+}
+
+
+.pro{
+	text-decoration-color: orange;
+}
+
+.skill-row{
+	width: 80%;
+	margin:100px auto 100px auto;
+	text-align: left;
+	line-height: 2;
+}
+
+.pro{
+	padding-top: 25px;
+	width: 25%;
+	height: 25%;
+}
+
+.leftt{
+	float:left;
+	padding-right: 30px;
+	width:25%;
+}
+
+.rightt{
+	float: right;
+	padding-right: 30px;
+	width:25%;
+}
+
+hr{
+	border-style: dotted none none none;
+	border-width: 5px;
+	color: grey;
+	width: 5%;
+}
+
+.bottom-container{
+	background-color: palegreen;
+	padding: 30px;
+}
+
+.para{
+	color: #EAF6F6;
+}
+
+.footer-link{
+	padding: 20px;
+}
+
+#Education, #tech_skills, #projects, #certificates, #language
+{
+	border-width: 5px;
+	border-style: double;
+	border-radius: 10px;
+	width: 50%; 
+	background-image: url(the.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
