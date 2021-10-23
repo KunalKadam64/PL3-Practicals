@@ -21,6 +21,11 @@ h1{
 	line-height: 2;
 }
 
+.contact
+{
+	font-size: 20px;
+}
+
 .batch{
 	font-weight: normal;
 	font-size: 40px;
@@ -39,10 +44,6 @@ a{
 }
 
 
-.pro{
-	text-decoration-color: orange;
-}
-
 .skill-row{
 	width: 80%;
 	margin:100px auto 100px auto;
@@ -51,6 +52,7 @@ a{
 }
 
 .pro{
+	text-decoration-color: orange;
 	padding-top: 25px;
 	width: 25%;
 	height: 25%;
@@ -88,7 +90,7 @@ hr{
 	padding: 20px;
 }
 
-#Education, #tech_skills, #projects, #certificates, #language
+#Education, #tech_skills, #projects, #certificates, #language, #hobbies, #contact
 {
 	border-width: 5px;
 	border-style: double;
@@ -98,4 +100,31 @@ hr{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+input[type=text], input[type=email]
+{
+	width: 80%;
+	padding: 12px;
+	border:  1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit]
+{
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border:  none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]: hover
+{
+	background-color: #45a049;
 }
