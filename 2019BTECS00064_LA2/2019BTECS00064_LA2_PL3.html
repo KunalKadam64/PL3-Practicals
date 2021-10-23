@@ -4,6 +4,41 @@
         <meta charset="UTF-8" />
         <title>Resume</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+        	function validation()
+        	{
+        		var fname=document.forms["contact-me"]["firstname"];
+        		var lname=document.forms["contact-me"]["lastname"];
+        		var email=document.forms["contact-me"]["email"];
+        		var message=document.forms["contact-me"]["message"];
+        		if(fname.value=="")
+        		{
+        			window.alert("Please Enter First Name");
+        			fname.focus();
+        			return false;
+        		}
+        		if(lname.value=="")
+        		{
+        			window.alert("Please Enter Last Name");
+        			lname.focus();
+        			return false;
+        		}
+        		if(email.value=="")
+        		{
+        			window.alert("Please Enter Email");
+        			email.focus();
+        			return false;
+        		}
+        		if(message.value=="")
+        		{
+        			window.alert("Please Enter Message");
+        			message.focus();
+        			return false;
+        		}
+        		alert("Email Sent....");
+        		return true;
+        	}
+        </script>
     </head>
     <body>
     	<div>
@@ -23,13 +58,15 @@
     			<h4 class="intrest">
     				Competitive Coding, Flutter Developer
     			</h4>
-    			<b>
-    				Contact:
-    			</b>
-    			<br />
-    			<b>Email ID:</b> kunalkadam179@gmail.com
-    			<br />
-    			<b>Mobile No: </b> 9890300733
+    			<div class="contact">
+    				<b>
+	    				Contact:
+	    			</b>
+	    			<br />
+	    			<b>Email ID:</b> kunalkadam179@gmail.com
+	    			<br />
+	    			<b>Mobile No: </b> 9890300733
+    			</div>
     		</div>
     		<hr>
     		<div class="skills">
@@ -218,7 +255,7 @@
     			</div>
     			<div class="skill-row">
     				<img class="rightt" src="images\hobbies.jpg" alt="" width="250">
-    				<fieldset id="language">
+    				<fieldset id="hobbies">
     					<legend>
     						<h2>
     							Interests/Hobbies
@@ -233,15 +270,37 @@
     			</div>
     		</div>
     	</div>
-    	<hr>
-    	<div class="contact-me">
-		    <h2>Get In Touch</h2>
-		    <h3>Kunal Kadam</h3>
-		    <p>Mail: kunalkadam179@gmail.com</p>
-		    <a href="mailto:kunalkadam179@gmail.com" class="btn">CONTACT ME</a>
+    	<div class="skill-row">
+    		<img class="leftt" src="images\email.jpg" alt="contact" height="250px" width="80px">
+		    <fieldset id="contact">
+		    	<h2>Get In Touch</h2>
+			    <form name="contact-me" onsubmit="return validation()"
+			    	action="mailto: kunalkadam179@gmail.com"
+			    	method="POSt"
+			    	enctype="multipart/form-data">
+			    	<label for="fname">First Name: </label>
+			    	&nbsp;
+			    	<input type="text" name="firstname" id="fname" placeholder="Enter Your First Name"/>
+			    	<br>
+			    	<label for="lname">Last Name: </label>
+			    	&nbsp;
+			    	<input type="text" name="lastname" id="lname" placeholder="Enter Your Last Name"/>
+			    	<br>
+			    	<label for="email">Email Id: </label>
+			    	&nbsp;&nbsp;&nbsp;&nbsp;
+			    	<input type="email" name="email" id="email" placeholder="Enter Your Email"/>
+			    	<br>
+			    	<label for="message">Message: </label>
+			    	&nbsp;&nbsp;&nbsp;
+			    	<input type="text" name="message" id="message" placeholder="Enter Your Message"/>
+			    	<br>
+			    	<input type="submit" value="Contact Me"/>
+			    	<br>
+			    </form>
+		    </fieldset>
 		</div>
 		<br>
-
+		<hr>
 		<div class="bottom-container">
 			<a class="footer-link" href="#">LinkedIn</a>
 			<a class="footer-link" href="#">Website</a>
